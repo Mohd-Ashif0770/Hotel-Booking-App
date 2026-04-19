@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import { useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 const App = () => {
 
-  const isOwnerPage = useLocation().pathname.includes('/owner');
+  const location = useLocation();
+  const isOwnerPage = location.pathname.includes('/owner');
 
   return (
     <div>
