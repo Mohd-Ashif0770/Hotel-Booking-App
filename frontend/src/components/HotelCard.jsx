@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const HotelCard = ({ room, index }) => {
   return (
-    <Link to={`/room/${room._id}`} key={room._id} className="my-15">
+    <Link to={`/room/${room._id}`} key={room._id} >
       <div className="w-full h-full relative bg-white rounded-lg shadow-md overflow-hidden">
         <img
           src={room.images[0]}

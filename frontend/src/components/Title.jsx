@@ -1,12 +1,18 @@
 import React from "react";
 
-const Title = () => {
+const Title = ({
+  title,
+  subtitle,
+  align = "center",
+  font = "playfair",
+  titleClassName = "",
+  subtitleClassName = "",
+}) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-1 text-center">
-      <h2 className="text-3xl font-playfair font-bold text-gray-700">Featured Hotels</h2>
-      <p className="text-gray-500 text-sm font-base">
-        Discover our handpicked selection of exceptional properties around the
-        world, offering <br /> unparalleled luxury and unforgettable experiences
+    <div className={`flex flex-col items-${align} justify-center gap-1 text-${align}`}>
+      <h2 className={`text-3xl font-${font} font-bold text-gray-700 ${titleClassName}`}>{title}</h2>
+      <p className={`text-sm font-base text-gray-500 ${subtitleClassName}`}>
+        {subtitle}  
       </p>
     </div>
   );
