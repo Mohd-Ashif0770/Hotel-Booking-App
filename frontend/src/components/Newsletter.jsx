@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 const Newsletter = () => {
   return (
     <div className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-18 pb-15 text-white">
-      <div className="flex flex-col items-center w-full max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-2 lg:mx-auto my-30 bg-gray-900 text-white">
+      <div className="flex flex-col items-center w-full max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-2 lg:mx-auto my-20 bg-gray-900 text-white">
          <Title
           title="Stay Inspired"
           subtitle={

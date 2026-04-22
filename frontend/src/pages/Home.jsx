@@ -5,6 +5,7 @@ import ExclusiveOffer from '../components/ExclusiveOffer'
 import Testimonial from '../components/Testimonial'
 import Newsletter from '../components/Newsletter'
 
+
 const Home = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const Home = () => {
         <ExclusiveOffer />
         <Testimonial />
         <Newsletter />
+        
     </div>
   )
 }

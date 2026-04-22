@@ -3,8 +3,8 @@ import { assets, cities } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div className='flex flex-col  items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url("/src/assets/heroImage.png")] h-screen bg-cover bg-center bg-no-repeat bg-[#E4EEF84F]'>
-      <p className="bg-[#49b9ff]/50 px-3.5 py-1 rounded-full w-fit mt-50 sm:mt-30">
+    <div className='flex flex-col  items-start justify-center px-4 md:px-10 lg:px-18 text-white bg-[url("/src/assets/heroImage.png")] h-screen bg-cover bg-center bg-no-repeat bg-[#E4EEF84F]'>
+      <p className="bg-black/80 px-4 py-2 rounded-full text-gray-300 font-medium w-fit mt-50 sm:mt-30">
         The ultimate hotel experience
       </p>
       <h1 className="font-playfair text-2xl md:text-5xl lg:text-6xl font-bold md-leading-[56px] md:font-extrabold max-w-xl mt-4">
