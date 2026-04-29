@@ -41,12 +41,17 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    
-    setIsScrolled(pre => location.pathname !== '/' ? true : false);
+    if (location.pathname !== "/") {
+      setIsScrolled(true);
+      return;
+    }
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
+    // Keep scroll effect only on home page.
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
