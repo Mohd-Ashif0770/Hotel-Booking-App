@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 const HotelCard = ({ room, index }) => {
   return (
     <Link to={`/room/${room._id}`} key={room._id} >
-      <div className="w-full h-full relative bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="w-full h-full relative bg-white rounded-lg shadow-md overflow-hidden" onClick={() => window.scrollTo(0, 0)}>
         <img
           src={room.images[0]}
           alt={room.name}
